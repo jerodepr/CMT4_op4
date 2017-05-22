@@ -1,0 +1,29 @@
+<% include header %>
+
+<h1 class="terug"><a href="/">Terug</a></h1>
+
+<h5><%- categorieen[id] %></h5>
+
+  <% for (var i = 0; i < items.length; i++) { %>
+    <% if (items[i].categorieen.indexOf(categorieen[id]) !== -1) { %>
+      <section id="section1">
+          <img class="foto" src="/img/<%- items[i].afbeeldings %>" alt="<%- items[i].titel %>">
+     </section>
+    <section id="section2">
+    <div class="tekst">
+        <div class="innertekst">
+        <h2>
+            <a href=/items/<%- items[i].id %>><%- items[i].titel %></a>
+          </h2>          
+          <p><%- items[i].datum %></p>
+
+          <p>
+            <%- items[i].samenvatting %>
+          </p>
+        </div>
+    </div>
+    </section>
+    <% } %>
+  <% } %>
+
+<% include footer %>

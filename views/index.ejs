@@ -1,0 +1,41 @@
+<% include header %>
+
+
+<nav>
+    <div class="nav">
+<% for (var i = 0; i < categorieen.length; i++) { %>
+    <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+  <% } %>
+    </div>
+</nav>
+
+
+  <% var teller = 1; %>
+  <% nieuws.forEach(function(item){ %>
+    
+
+<section id="section1">
+    <img class="foto" src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+</section>
+
+    <section id="section2" >
+        <div class="tekst">
+            <div class="innertekst">
+            <div class="center">
+                <h3 class="nummer"><%- item.nummer %></h3>
+            <h2>
+                <a href=/items/<%- item.id %>><%- item.titel %></a>
+            </h2>
+            <p>
+                <%- item.samenvatting %>
+            </p>
+            <h6><%- item.categorieen %></h6>    
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <% teller++;}); %>
+
+
+<% include footer %>
