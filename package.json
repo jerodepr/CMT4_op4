@@ -2,12 +2,12 @@
   "name": "mobiel-nieuws-demo",
   "version": "1.0.0",
   "description": "Mobiele nieuwssite",
-  "main": "app.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "keywords": [
     "web",
