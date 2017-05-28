@@ -126,6 +126,28 @@ nav a{
     letter-spacing: 0.5px;
 }
 
+footer{
+    height: 5vh;
+    padding: 20vw;
+    position: relative;
+}
+
+.link{
+    width: 60vw;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+}
+
+.link a{
+    text-align: center;
+}
+
+.NieuwsPh{
+    width: 70vw;
+    
+    padding-bottom: 50px;
+}
 
 
 
